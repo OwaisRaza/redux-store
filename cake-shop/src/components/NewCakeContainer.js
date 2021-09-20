@@ -9,11 +9,11 @@ function NewCakeContainer(props) {
     <div>
       <h2>Number of cake simple - {props.numberOfCake}</h2>
       <input
-        type="number"
+        type="text"
         value={number}
         onChange={(e) => setNumber(e.target.value)}
       />
-      <button onClick={() => props.buyCake(number)}>Buy cake</button>
+      <button onClick={() => props.buyCake(number)}>Buy {number} cake</button>
     </div>
   );
 }
